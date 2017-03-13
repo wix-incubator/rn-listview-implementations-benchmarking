@@ -1,0 +1,23 @@
+import React, {Component} from 'react';
+import {View, Text, Image} from 'react-native';
+
+export default class Cell extends Component {
+  constructor(props) {
+    super(props);
+  }
+
+  render() {
+    data = this.props.data;
+    return (
+      <View style={{
+          backgroundColor: 'cyan',
+          margin: 5, flex: 1,
+          flexDirection: 'row',
+          justifyContent: 'space-between'}}>
+        <Text style={{marginLeft: 20}}>{data.image}</Text>
+        <Text style={{marginRight: 20}}>{data.name}</Text>
+        <Text style={{marginRight: 20, width: 40}}>{data.index}</Text>
+      </View>
+    );
+  }
+}
