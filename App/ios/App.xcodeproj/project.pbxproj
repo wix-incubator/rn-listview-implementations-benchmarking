@@ -22,6 +22,10 @@
 		146834051AC3E58100842450 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
 		5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
+		A7AC65B41E786F8C003E38AD /* UIViewOverrides.m in Sources */ = {isa = PBXBuildFile; fileRef = A7AC65AE1E786F8C003E38AD /* UIViewOverrides.m */; };
+		A7AC65B51E786F8C003E38AD /* ViewsAnalyzer.m in Sources */ = {isa = PBXBuildFile; fileRef = A7AC65B01E786F8C003E38AD /* ViewsAnalyzer.m */; };
+		A7AC65B61E786F8C003E38AD /* WrapperView.m in Sources */ = {isa = PBXBuildFile; fileRef = A7AC65B21E786F8C003E38AD /* WrapperView.m */; };
+		A7AC65B71E786F8C003E38AD /* WrapperViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A7AC65B31E786F8C003E38AD /* WrapperViewManager.m */; };
 		A7E0C1CF1E76CDAB00E07B7D /* libReactNativeNavigation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A7E0C1CE1E76CD8C00E07B7D /* libReactNativeNavigation.a */; };
 /* End PBXBuildFile section */
 
@@ -223,7 +227,7 @@
 		139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTWebSocket.xcodeproj; path = "../node_modules/react-native/Libraries/WebSocket/RCTWebSocket.xcodeproj"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = App/AppDelegate.h; sourceTree = "<group>"; };
-		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = App/AppDelegate.m; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = App/AppDelegate.m; sourceTree = "<group>"; tabWidth = 4; };
 		13B07FB21A68108700A75B9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = App/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = App/Info.plist; sourceTree = "<group>"; };
@@ -232,6 +236,13 @@
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
+		A7AC65AD1E786F8C003E38AD /* UIViewOverrides.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIViewOverrides.h; path = App/UIViewOverrides.h; sourceTree = "<group>"; };
+		A7AC65AE1E786F8C003E38AD /* UIViewOverrides.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIViewOverrides.m; path = App/UIViewOverrides.m; sourceTree = "<group>"; };
+		A7AC65AF1E786F8C003E38AD /* ViewsAnalyzer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewsAnalyzer.h; path = App/ViewsAnalyzer.h; sourceTree = "<group>"; };
+		A7AC65B01E786F8C003E38AD /* ViewsAnalyzer.m */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.c.objc; name = ViewsAnalyzer.m; path = App/ViewsAnalyzer.m; sourceTree = "<group>"; tabWidth = 4; };
+		A7AC65B11E786F8C003E38AD /* WrapperView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WrapperView.h; path = App/WrapperView.h; sourceTree = "<group>"; };
+		A7AC65B21E786F8C003E38AD /* WrapperView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WrapperView.m; path = App/WrapperView.m; sourceTree = "<group>"; };
+		A7AC65B31E786F8C003E38AD /* WrapperViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WrapperViewManager.m; path = App/WrapperViewManager.m; sourceTree = "<group>"; };
 		A7E0C1C91E76CD8C00E07B7D /* ReactNativeNavigation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ReactNativeNavigation.xcodeproj; path = "../node_modules/react-native-navigation/ios/ReactNativeNavigation.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -341,6 +352,13 @@
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
+				A7AC65AD1E786F8C003E38AD /* UIViewOverrides.h */,
+				A7AC65AE1E786F8C003E38AD /* UIViewOverrides.m */,
+				A7AC65AF1E786F8C003E38AD /* ViewsAnalyzer.h */,
+				A7AC65B01E786F8C003E38AD /* ViewsAnalyzer.m */,
+				A7AC65B11E786F8C003E38AD /* WrapperView.h */,
+				A7AC65B21E786F8C003E38AD /* WrapperView.m */,
+				A7AC65B31E786F8C003E38AD /* WrapperViewManager.m */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
@@ -760,7 +778,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7AC65B71E786F8C003E38AD /* WrapperViewManager.m in Sources */,
+				A7AC65B61E786F8C003E38AD /* WrapperView.m in Sources */,
+				A7AC65B41E786F8C003E38AD /* UIViewOverrides.m in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
+				A7AC65B51E786F8C003E38AD /* ViewsAnalyzer.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

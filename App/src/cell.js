@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {View, Text, Image} from 'react-native';
+import WrapperView from './wrapper_view';
 
 export default class Cell extends Component {
   constructor(props) {
@@ -9,7 +10,7 @@ export default class Cell extends Component {
   render() {
     data = this.props.data;
     return (
-      <View style={{
+      <WrapperView cellIndex={data.index} style={{
           backgroundColor: 'cyan',
           margin: 5, flex: 1,
           flexDirection: 'row',
@@ -17,7 +18,7 @@ export default class Cell extends Component {
         <Text style={{marginLeft: 20}}>{data.image}</Text>
         <Text style={{marginRight: 20}}>{data.name}</Text>
         <Text style={{marginRight: 20, width: 40}}>{data.index}</Text>
-      </View>
+      </WrapperView>
     );
   }
 }

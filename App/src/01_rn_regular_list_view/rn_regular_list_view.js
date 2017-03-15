@@ -16,7 +16,7 @@ export default class RNRegularListView extends Component {
       <View style={{flex: 1, paddingTop: 22}}>
         <ListView
           dataSource={this.state.dataSource}
-          renderRow={(rowData) => <Cell data={rowData}/>}
+          renderRow={({rowData}) => <Cell data={rowData}/>}
         />
       </View>
     );

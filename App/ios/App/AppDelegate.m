@@ -13,36 +13,40 @@
 #import <React/RCTRootView.h>
 
 #import "RCCManager.h"
+#import "UIViewOverrides.h"
+#import "ViewsAnalyzer.h"
 
-@implementation AppDelegate
+@implementation AppDelegate {
+    ViewsAnalyzer *_viewsAnalyzer;
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-  NSURL *jsCodeLocation;
-
-  jsCodeLocation = [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index.ios" fallbackResource:nil];
-
-  
-  
-  self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-  self.window.backgroundColor = [UIColor whiteColor];
-  [[RCCManager sharedInstance] initBridgeWithBundleURL:jsCodeLocation];
-
-  
-  
-//  RCTRootView *rootView = [[RCTRootView alloc] initWithBundleURL:jsCodeLocation
-//                                                      moduleName:@"App"
-//                                               initialProperties:nil
-//                                                   launchOptions:launchOptions];
-//  rootView.backgroundColor = [[UIColor alloc] initWithRed:1.0f green:1.0f blue:1.0f alpha:1];
-//
-//  self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-//  UIViewController *rootViewController = [UIViewController new];
-//  rootViewController.view = rootView;
-//  self.window.rootViewController = rootViewController;
-//  [self.window makeKeyAndVisible];
-
-  return YES;
+    [UIViewOverrides class];
+    
+    NSURL *jsCodeLocation;
+    
+    jsCodeLocation = [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index.ios" fallbackResource:nil];
+    
+    
+    
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.backgroundColor = [UIColor whiteColor];
+    [[RCCManager sharedInstance] initBridgeWithBundleURL:jsCodeLocation];
+    
+    _viewsAnalyzer = [[ViewsAnalyzer alloc] init];
+    [_viewsAnalyzer addViewsObserver:self];
+    
+    return YES;
 }
+
+- (void)ViewAnalyzerObserver_visibleTopWrapperViewsAdded:(NSArray<WrapperView *> *)added removed:(NSArray<WrapperView *> *)removed
+{
+    NSLog(@"");
+    NSLog(@"views removed: %@", removed);
+    NSLog(@"views added: %@", added);
+    NSLog(@"");
+}
+
 
 @end
