@@ -10,7 +10,7 @@ export default class RNFlatList extends Component {
 
   render() {
     return (
-      <View style={{flex: 1, paddingTop: 22}}>
+      <View style={{flex: 1}}>
         <FlatList
           data={_.map(this.props.dataProvider.all(), (x) => {y = {...x, key: x.index}; return y;})}
           renderItem={({item}) => <Cell data={item}/>}

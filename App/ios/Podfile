@@ -1,0 +1,15 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'AppTests' do
+  project 'App'
+
+  use_frameworks!
+  inherit! :search_paths
+  pod 'EarlGrey'
+end
+
+post_install do |installer|
+  require 'earlgrey'
+  configure_for_earlgrey(installer, 'App', 'AppTests', 'AppTests.xcscheme')
+end

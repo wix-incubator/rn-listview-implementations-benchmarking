@@ -15,6 +15,7 @@
 #import "RCCManager.h"
 #import "UIViewOverrides.h"
 #import "ViewsAnalyzer.h"
+#import <RNTableView/RNAppGlobals.h>
 
 @implementation AppDelegate {
     ViewsAnalyzer *_viewsAnalyzer;
@@ -28,14 +29,14 @@
     
     jsCodeLocation = [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index.ios" fallbackResource:nil];
     
-    
-    
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
     [[RCCManager sharedInstance] initBridgeWithBundleURL:jsCodeLocation];
     
-    _viewsAnalyzer = [[ViewsAnalyzer alloc] init];
-    [_viewsAnalyzer addViewsObserver:self];
+    [[RNAppGlobals sharedInstance] setAppBridge:[[RCCManager sharedIntance] getBridge]];
+    
+//    _viewsAnalyzer = [[ViewsAnalyzer alloc] init];
+//    [_viewsAnalyzer addViewsObserver:self];
     
     return YES;
 }

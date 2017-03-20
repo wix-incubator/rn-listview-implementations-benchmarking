@@ -21,12 +21,18 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		146834051AC3E58100842450 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
 		5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
+		6A7EE71A050077A5A8DD4BCF /* Pods_AppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BAE6BAB9263F4C12F62D348 /* Pods_AppTests.framework */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		A7AC65B41E786F8C003E38AD /* UIViewOverrides.m in Sources */ = {isa = PBXBuildFile; fileRef = A7AC65AE1E786F8C003E38AD /* UIViewOverrides.m */; };
 		A7AC65B51E786F8C003E38AD /* ViewsAnalyzer.m in Sources */ = {isa = PBXBuildFile; fileRef = A7AC65B01E786F8C003E38AD /* ViewsAnalyzer.m */; };
 		A7AC65B61E786F8C003E38AD /* WrapperView.m in Sources */ = {isa = PBXBuildFile; fileRef = A7AC65B21E786F8C003E38AD /* WrapperView.m */; };
 		A7AC65B71E786F8C003E38AD /* WrapperViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A7AC65B31E786F8C003E38AD /* WrapperViewManager.m */; };
+		A7B972B71E796E48002CA4C5 /* ScrollBot.m in Sources */ = {isa = PBXBuildFile; fileRef = A7B972B61E796E48002CA4C5 /* ScrollBot.m */; };
 		A7E0C1CF1E76CDAB00E07B7D /* libReactNativeNavigation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A7E0C1CE1E76CD8C00E07B7D /* libReactNativeNavigation.a */; };
+		A7E3B3911E7970490021B0DF /* AppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* AppTests.m */; };
+		A7E3B3951E7ABEB80021B0DF /* FullyNativeTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = A7E3B3941E7ABEB80021B0DF /* FullyNativeTableView.m */; };
+		A7E3B3981E7AC12D0021B0DF /* FullyNativeTableViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A7E3B3971E7AC12D0021B0DF /* FullyNativeTableViewManager.m */; };
+		FB64194768024A9AADE80BC1 /* libRNTableView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AF29810B700F447F811EB3B6 /* libRNTableView.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -205,12 +211,26 @@
 			remoteGlobalIDString = 58B5119B1A9E6C1200147676;
 			remoteInfo = RCTText;
 		};
+		A7B972471E796B61002CA4C5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
+			remoteInfo = App;
+		};
 		A7E0C1CD1E76CD8C00E07B7D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A7E0C1C91E76CD8C00E07B7D /* ReactNativeNavigation.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = D8AFADBD1BEE6F3F00A4592D;
 			remoteInfo = ReactNativeNavigation;
+		};
+		A7E3B3EE1E7ED5810021B0DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D2C68D4FC8864E13BEB1A069 /* RNTableView.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 873769951B7CD6E900F7C3C2;
+			remoteInfo = RNTableView;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -234,8 +254,10 @@
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = App/main.m; sourceTree = "<group>"; };
 		146833FF1AC3E56700842450 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
+		6871CF3B29842C665172C132 /* Pods-AppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AppTests/Pods-AppTests.release.xcconfig"; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
+		8BAE6BAB9263F4C12F62D348 /* Pods_AppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7AC65AD1E786F8C003E38AD /* UIViewOverrides.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIViewOverrides.h; path = App/UIViewOverrides.h; sourceTree = "<group>"; };
 		A7AC65AE1E786F8C003E38AD /* UIViewOverrides.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIViewOverrides.m; path = App/UIViewOverrides.m; sourceTree = "<group>"; };
 		A7AC65AF1E786F8C003E38AD /* ViewsAnalyzer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewsAnalyzer.h; path = App/ViewsAnalyzer.h; sourceTree = "<group>"; };
@@ -243,7 +265,16 @@
 		A7AC65B11E786F8C003E38AD /* WrapperView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WrapperView.h; path = App/WrapperView.h; sourceTree = "<group>"; };
 		A7AC65B21E786F8C003E38AD /* WrapperView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WrapperView.m; path = App/WrapperView.m; sourceTree = "<group>"; };
 		A7AC65B31E786F8C003E38AD /* WrapperViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WrapperViewManager.m; path = App/WrapperViewManager.m; sourceTree = "<group>"; };
+		A7B972421E796B61002CA4C5 /* AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7B972B51E796E48002CA4C5 /* ScrollBot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollBot.h; sourceTree = "<group>"; };
+		A7B972B61E796E48002CA4C5 /* ScrollBot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollBot.m; sourceTree = "<group>"; };
 		A7E0C1C91E76CD8C00E07B7D /* ReactNativeNavigation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ReactNativeNavigation.xcodeproj; path = "../node_modules/react-native-navigation/ios/ReactNativeNavigation.xcodeproj"; sourceTree = "<group>"; };
+		A7E3B3931E7ABEB80021B0DF /* FullyNativeTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FullyNativeTableView.h; sourceTree = "<group>"; };
+		A7E3B3941E7ABEB80021B0DF /* FullyNativeTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.c.objc; path = FullyNativeTableView.m; sourceTree = "<group>"; tabWidth = 4; };
+		A7E3B3971E7AC12D0021B0DF /* FullyNativeTableViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FullyNativeTableViewManager.m; sourceTree = "<group>"; };
+		AF29810B700F447F811EB3B6 /* libRNTableView.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNTableView.a; sourceTree = "<group>"; };
+		D2C68D4FC8864E13BEB1A069 /* RNTableView.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNTableView.xcodeproj; path = "../node_modules/react-native-tableview/RNTableView.xcodeproj"; sourceTree = "<group>"; };
+		EA36FB95044EDF35A86B3558 /* Pods-AppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AppTests/Pods-AppTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -263,6 +294,15 @@
 				832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */,
 				00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */,
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
+				FB64194768024A9AADE80BC1 /* libRNTableView.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7B9723F1E796B61002CA4C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A7EE71A050077A5A8DD4BCF /* Pods_AppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,6 +355,8 @@
 			isa = PBXGroup;
 			children = (
 				00E356F21AD99517003FC87E /* AppTests.m */,
+				A7B972B51E796E48002CA4C5 /* ScrollBot.h */,
+				A7B972B61E796E48002CA4C5 /* ScrollBot.m */,
 				00E356F01AD99517003FC87E /* Supporting Files */,
 			);
 			path = AppTests;
@@ -326,6 +368,14 @@
 				00E356F11AD99517003FC87E /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		044C3C5F565F610B5A8CA97E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8BAE6BAB9263F4C12F62D348 /* Pods_AppTests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		139105B71AF99BAD00B5F7CC /* Products */ = {
@@ -349,6 +399,7 @@
 		13B07FAE1A68108700A75B9A /* App */ = {
 			isa = PBXGroup;
 			children = (
+				A7E3B3921E7AA7B10021B0DF /* 00_FullyNativeTableView */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
@@ -415,6 +466,7 @@
 				832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */,
 				00C302DF1ABCB9EE00DB3ED1 /* RCTVibration.xcodeproj */,
 				139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */,
+				D2C68D4FC8864E13BEB1A069 /* RNTableView.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -435,23 +487,54 @@
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* AppTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
+				8BE9CA6217B2E9604C4DF950 /* Pods */,
+				044C3C5F565F610B5A8CA97E /* Frameworks */,
 			);
-			indentWidth = 2;
+			indentWidth = 4;
 			sourceTree = "<group>";
-			tabWidth = 2;
+			tabWidth = 4;
 		};
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
 				13B07F961A680F5B00A75B9A /* App.app */,
+				A7B972421E796B61002CA4C5 /* AppTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		8BE9CA6217B2E9604C4DF950 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EA36FB95044EDF35A86B3558 /* Pods-AppTests.debug.xcconfig */,
+				6871CF3B29842C665172C132 /* Pods-AppTests.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		A7E0C1CA1E76CD8C00E07B7D /* Products */ = {
 			isa = PBXGroup;
 			children = (
 				A7E0C1CE1E76CD8C00E07B7D /* libReactNativeNavigation.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A7E3B3921E7AA7B10021B0DF /* 00_FullyNativeTableView */ = {
+			isa = PBXGroup;
+			children = (
+				A7E3B3931E7ABEB80021B0DF /* FullyNativeTableView.h */,
+				A7E3B3941E7ABEB80021B0DF /* FullyNativeTableView.m */,
+				A7E3B3971E7AC12D0021B0DF /* FullyNativeTableViewManager.m */,
+			);
+			name = 00_FullyNativeTableView;
+			path = App/00_FullyNativeTableView;
+			sourceTree = "<group>";
+		};
+		A7E3B3D11E7ED5810021B0DF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A7E3B3EF1E7ED5810021B0DF /* libRNTableView.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -477,17 +560,44 @@
 			productReference = 13B07F961A680F5B00A75B9A /* App.app */;
 			productType = "com.apple.product-type.application";
 		};
+		A7B972411E796B61002CA4C5 /* AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7B972651E796B61002CA4C5 /* Build configuration list for PBXNativeTarget "AppTests" */;
+			buildPhases = (
+				EE95921182D146E8384ADDD5 /* [CP] Check Pods Manifest.lock */,
+				A7B9723E1E796B61002CA4C5 /* Sources */,
+				A7B9723F1E796B61002CA4C5 /* Frameworks */,
+				A7B972401E796B61002CA4C5 /* Resources */,
+				52C10DE7C87B95AA75D184D9 /* [CP] Embed Pods Frameworks */,
+				461157AF51A9DB3D5E5BB9DB /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A7B972481E796B61002CA4C5 /* PBXTargetDependency */,
+			);
+			name = AppTests;
+			productName = AppTests;
+			productReference = A7B972421E796B61002CA4C5 /* AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		83CBB9F71A601CBA00E9B192 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0610;
+				LastUpgradeCheck = 610;
 				ORGANIZATIONNAME = Facebook;
 				TargetAttributes = {
 					13B07F861A680F5B00A75B9A = {
 						DevelopmentTeam = S3GLW74Y8N;
+					};
+					A7B972411E796B61002CA4C5 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = S3GLW74Y8N;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 				};
 			};
@@ -551,10 +661,15 @@
 					ProductGroup = A7E0C1CA1E76CD8C00E07B7D /* Products */;
 					ProjectRef = A7E0C1C91E76CD8C00E07B7D /* ReactNativeNavigation.xcodeproj */;
 				},
+				{
+					ProductGroup = A7E3B3D11E7ED5810021B0DF /* Products */;
+					ProjectRef = D2C68D4FC8864E13BEB1A069 /* RNTableView.xcodeproj */;
+				},
 			);
 			projectRoot = "";
 			targets = (
 				13B07F861A680F5B00A75B9A /* App */,
+				A7B972411E796B61002CA4C5 /* AppTests */,
 			);
 		};
 /* End PBXProject section */
@@ -742,6 +857,13 @@
 			remoteRef = A7E0C1CD1E76CD8C00E07B7D /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		A7E3B3EF1E7ED5810021B0DF /* libRNTableView.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRNTableView.a;
+			remoteRef = A7E3B3EE1E7ED5810021B0DF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
@@ -751,6 +873,13 @@
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7B972401E796B61002CA4C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -771,6 +900,51 @@
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/packager/react-native-xcode.sh";
 		};
+		461157AF51A9DB3D5E5BB9DB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AppTests/Pods-AppTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		52C10DE7C87B95AA75D184D9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AppTests/Pods-AppTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE95921182D146E8384ADDD5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -779,15 +953,34 @@
 			buildActionMask = 2147483647;
 			files = (
 				A7AC65B71E786F8C003E38AD /* WrapperViewManager.m in Sources */,
+				A7E3B3981E7AC12D0021B0DF /* FullyNativeTableViewManager.m in Sources */,
 				A7AC65B61E786F8C003E38AD /* WrapperView.m in Sources */,
 				A7AC65B41E786F8C003E38AD /* UIViewOverrides.m in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
 				A7AC65B51E786F8C003E38AD /* ViewsAnalyzer.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
+				A7E3B3951E7ABEB80021B0DF /* FullyNativeTableView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7B9723E1E796B61002CA4C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7B972B71E796E48002CA4C5 /* ScrollBot.m in Sources */,
+				A7E3B3911E7970490021B0DF /* AppTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A7B972481E796B61002CA4C5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13B07F861A680F5B00A75B9A /* App */;
+			targetProxy = A7B972471E796B61002CA4C5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		13B07FB11A68108700A75B9A /* LaunchScreen.xib */ = {
@@ -809,8 +1002,17 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
 				DEVELOPMENT_TEAM = S3GLW74Y8N;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../node_modules/react-native-tableview/RNTableView",
+					"$(SRCROOT)/../node_modules/react-native-tableview/**",
+				);
 				INFOPLIST_FILE = App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/App\"",
+				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -828,8 +1030,17 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = S3GLW74Y8N;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../node_modules/react-native-tableview/RNTableView",
+					"$(SRCROOT)/../node_modules/react-native-tableview/**",
+				);
 				INFOPLIST_FILE = App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/App\"",
+				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -917,6 +1128,50 @@
 			};
 			name = Release;
 		};
+		A7B972491E796B61002CA4C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA36FB95044EDF35A86B3558 /* Pods-AppTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = S3GLW74Y8N;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = AppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wix.AppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/App.app/App";
+			};
+			name = Debug;
+		};
+		A7B9724A1E796B61002CA4C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6871CF3B29842C665172C132 /* Pods-AppTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = S3GLW74Y8N;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = AppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wix.AppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/App.app/App";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -934,6 +1189,15 @@
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,
 				83CBBA211A601CBA00E9B192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7B972651E796B61002CA4C5 /* Build configuration list for PBXNativeTarget "AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7B972491E796B61002CA4C5 /* Debug */,
+				A7B9724A1E796B61002CA4C5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

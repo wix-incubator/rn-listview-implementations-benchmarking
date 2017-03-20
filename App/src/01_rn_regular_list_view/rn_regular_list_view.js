@@ -13,10 +13,10 @@ export default class RNRegularListView extends Component {
 
   render() {
     return (
-      <View style={{flex: 1, paddingTop: 22}}>
+      <View style={{flex: 1}}>
         <ListView
           dataSource={this.state.dataSource}
-          renderRow={({rowData}) => <Cell data={rowData}/>}
+          renderRow={(rowData) => <Cell data={rowData}/>}
         />
       </View>
     );

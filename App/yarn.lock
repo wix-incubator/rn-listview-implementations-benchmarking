@@ -3015,6 +3015,10 @@ react-native-navigation@next:
   optionalDependencies:
     react-redux "*"
 
+react-native-tableview@^1.7.0:
+  version "1.7.0"
+  resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/react-native-tableview/-/react-native-tableview-1.7.0.tgz#870613402d62529592592ecd2710fcdaf017fe2e"
+
 react-native@0.43.0-rc.1:
   version "0.43.0-rc.1"
   resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/react-native/-/react-native-0.43.0-rc.1.tgz#b72386d9ab7bc117cebb3538ee240425afb26b8d"

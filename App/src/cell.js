@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {View, Text, Image} from 'react-native';
+import {View, Text, Image, AppRegistry} from 'react-native';
 import WrapperView from './wrapper_view';
 
 export default class Cell extends Component {
@@ -22,3 +22,5 @@ export default class Cell extends Component {
     );
   }
 }
+
+AppRegistry.registerComponent('Cell', () => Cell);
