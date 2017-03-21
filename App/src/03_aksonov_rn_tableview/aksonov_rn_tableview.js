@@ -12,11 +12,11 @@ export default class AksonovRNTableview extends Component {
   render() {
     return (
       <View style={{flex: 1}}>
-        <TableView style={{flex:1}} reactModuleForCell="Cell">
+        <TableView style={{flex:1}} reactModuleForCell="Cell" separatorStyle={0}>
           <TableView.Section>
             {
               _.map(this.props.dataProvider.all(), (x) => {
-                y = {...x, key: x.index};
+                y = {...x, key: x.index, height: 27};
                 return (<TableView.Item {...y}/>);
               })
             }

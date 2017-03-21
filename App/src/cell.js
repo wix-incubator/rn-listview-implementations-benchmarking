@@ -9,15 +9,25 @@ export default class Cell extends Component {
 
   render() {
     data = this.props.data;
+
     return (
       <WrapperView cellIndex={data.index} style={{
+          backgroundColor: 'white',
+          flex: 1,
+          height: 27
+          }}>
+        <View style={{
           backgroundColor: 'cyan',
-          margin: 5, flex: 1,
           flexDirection: 'row',
-          justifyContent: 'space-between'}}>
-        <Text style={{marginLeft: 20}}>{data.image}</Text>
-        <Text style={{marginRight: 20}}>{data.name}</Text>
-        <Text style={{marginRight: 20, width: 40}}>{data.index}</Text>
+          justifyContent: 'space-between',
+          marginTop: 1,
+          height: 25,
+          alignItems: 'center'
+        }}>
+          <Image style={{height: 25, width: 25}} source={data.img}/>
+          <Text style={{}}>{data.name}</Text>
+          <Text style={{width: 40, marginRight: 5, textAlign: 'right', fontFamily: 'Courier'}}>{data.index}</Text>
+        </View>
       </WrapperView>
     );
   }
