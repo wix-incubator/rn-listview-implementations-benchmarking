@@ -24,7 +24,7 @@ export default class Cell extends Component {
           height: 25,
           alignItems: 'center'
         }}>
-          <Image style={{height: 25, width: 25}} source={data.img}/>
+          <Image style={{height: 25, width: 25}} source={{uri: "file://" + data.img_path}}/>
           <Text style={{}}>{data.name}</Text>
           <Text style={{width: 40, marginRight: 5, textAlign: 'right', fontFamily: 'Courier'}}>{data.index}</Text>
         </View>

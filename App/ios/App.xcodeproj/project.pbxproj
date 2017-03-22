@@ -24,6 +24,7 @@
 		6A7EE71A050077A5A8DD4BCF /* Pods_AppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BAE6BAB9263F4C12F62D348 /* Pods_AppTests.framework */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		A744298B1E8034B0001810D9 /* FullyNativeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A74429891E8034B0001810D9 /* FullyNativeTableViewCell.m */; };
+		A74429AA1E826017001810D9 /* NativeInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = A74429A91E826017001810D9 /* NativeInfo.m */; };
 		A7AC65B41E786F8C003E38AD /* UIViewOverrides.m in Sources */ = {isa = PBXBuildFile; fileRef = A7AC65AE1E786F8C003E38AD /* UIViewOverrides.m */; };
 		A7AC65B51E786F8C003E38AD /* ViewsAnalyzer.m in Sources */ = {isa = PBXBuildFile; fileRef = A7AC65B01E786F8C003E38AD /* ViewsAnalyzer.m */; };
 		A7AC65B61E786F8C003E38AD /* WrapperView.m in Sources */ = {isa = PBXBuildFile; fileRef = A7AC65B21E786F8C003E38AD /* WrapperView.m */; };
@@ -261,6 +262,7 @@
 		8BAE6BAB9263F4C12F62D348 /* Pods_AppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A74429881E8034B0001810D9 /* FullyNativeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FullyNativeTableViewCell.h; sourceTree = "<group>"; };
 		A74429891E8034B0001810D9 /* FullyNativeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FullyNativeTableViewCell.m; sourceTree = "<group>"; };
+		A74429A91E826017001810D9 /* NativeInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NativeInfo.m; sourceTree = "<group>"; };
 		A7AC65AD1E786F8C003E38AD /* UIViewOverrides.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIViewOverrides.h; path = App/UIViewOverrides.h; sourceTree = "<group>"; };
 		A7AC65AE1E786F8C003E38AD /* UIViewOverrides.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIViewOverrides.m; path = App/UIViewOverrides.m; sourceTree = "<group>"; };
 		A7AC65AF1E786F8C003E38AD /* ViewsAnalyzer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewsAnalyzer.h; path = App/ViewsAnalyzer.h; sourceTree = "<group>"; };
@@ -413,6 +415,7 @@
 				A7AC65B11E786F8C003E38AD /* WrapperView.h */,
 				A7AC65B21E786F8C003E38AD /* WrapperView.m */,
 				A7AC65B31E786F8C003E38AD /* WrapperViewManager.m */,
+				A74429A91E826017001810D9 /* NativeInfo.m */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
@@ -961,6 +964,7 @@
 				A7AC65B71E786F8C003E38AD /* WrapperViewManager.m in Sources */,
 				A7E3B3981E7AC12D0021B0DF /* FullyNativeTableViewManager.m in Sources */,
 				A7AC65B61E786F8C003E38AD /* WrapperView.m in Sources */,
+				A74429AA1E826017001810D9 /* NativeInfo.m in Sources */,
 				A7AC65B41E786F8C003E38AD /* UIViewOverrides.m in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
 				A7AC65B51E786F8C003E38AD /* ViewsAnalyzer.m in Sources */,
@@ -1008,6 +1012,10 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
 				DEVELOPMENT_TEAM = S3GLW74Y8N;
+				"GCC_PREPROCESSOR_DEFINITIONS[sdk=iphonesimulator*]" = (
+					"$(inherited)",
+					"SRCROOT=\\\"$(SRCROOT)\\\"",
+				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-tableview/RNTableView",
