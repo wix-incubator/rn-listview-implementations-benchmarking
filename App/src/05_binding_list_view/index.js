@@ -24,7 +24,7 @@ export default class BindingListViewWrapper extends Component {
           ]}
           renderItemTemplate={this.renderItemTemplate_withImages.bind(this)}
           rowHeight={27}
-          poolSize={20}
+          poolSize={30}
           style={{flex: 1}}
         />
         {poolChildren}

@@ -4,6 +4,7 @@ import ListViews from './list_views';
 import _ from 'lodash';
 import Navigation from 'react-native-navigation';
 import DataProvider from './data_provider';
+import BridgeNoiseView from './bridge_noise/bridge_noise_view';
 
 export default class ListViewSelector extends Component {
   constructor(props) {
@@ -33,6 +34,7 @@ export default class ListViewSelector extends Component {
             title={rowData}
             />
           }/>
+        <BridgeNoiseView style={{marginLeft: 20, marginRight: 20}}/>
       </View>
     );
   }
