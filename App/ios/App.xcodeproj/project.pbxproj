@@ -25,6 +25,10 @@
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		A744298B1E8034B0001810D9 /* FullyNativeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A74429891E8034B0001810D9 /* FullyNativeTableViewCell.m */; };
 		A74429AA1E826017001810D9 /* NativeInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = A74429A91E826017001810D9 /* NativeInfo.m */; };
+		A74429E71E82B87D001810D9 /* BindingListView.m in Sources */ = {isa = PBXBuildFile; fileRef = A74429E61E82B87D001810D9 /* BindingListView.m */; };
+		A74429F01E82BBC5001810D9 /* BindingListViewCellManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A74429EF1E82BBC5001810D9 /* BindingListViewCellManager.m */; };
+		A74429F31E82BEDD001810D9 /* BindingListViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A74429F21E82BEDD001810D9 /* BindingListViewCell.m */; };
+		A74429F61E8428D0001810D9 /* BindingListViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A74429F51E8428D0001810D9 /* BindingListViewManager.m */; };
 		A7AC65B41E786F8C003E38AD /* UIViewOverrides.m in Sources */ = {isa = PBXBuildFile; fileRef = A7AC65AE1E786F8C003E38AD /* UIViewOverrides.m */; };
 		A7AC65B51E786F8C003E38AD /* ViewsAnalyzer.m in Sources */ = {isa = PBXBuildFile; fileRef = A7AC65B01E786F8C003E38AD /* ViewsAnalyzer.m */; };
 		A7AC65B61E786F8C003E38AD /* WrapperView.m in Sources */ = {isa = PBXBuildFile; fileRef = A7AC65B21E786F8C003E38AD /* WrapperView.m */; };
@@ -263,6 +267,12 @@
 		A74429881E8034B0001810D9 /* FullyNativeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FullyNativeTableViewCell.h; sourceTree = "<group>"; };
 		A74429891E8034B0001810D9 /* FullyNativeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FullyNativeTableViewCell.m; sourceTree = "<group>"; };
 		A74429A91E826017001810D9 /* NativeInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NativeInfo.m; sourceTree = "<group>"; };
+		A74429E51E82B87D001810D9 /* BindingListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BindingListView.h; sourceTree = "<group>"; };
+		A74429E61E82B87D001810D9 /* BindingListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BindingListView.m; sourceTree = "<group>"; };
+		A74429EF1E82BBC5001810D9 /* BindingListViewCellManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BindingListViewCellManager.m; sourceTree = "<group>"; };
+		A74429F11E82BEDD001810D9 /* BindingListViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BindingListViewCell.h; sourceTree = "<group>"; };
+		A74429F21E82BEDD001810D9 /* BindingListViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BindingListViewCell.m; sourceTree = "<group>"; };
+		A74429F51E8428D0001810D9 /* BindingListViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BindingListViewManager.m; sourceTree = "<group>"; };
 		A7AC65AD1E786F8C003E38AD /* UIViewOverrides.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIViewOverrides.h; path = App/UIViewOverrides.h; sourceTree = "<group>"; };
 		A7AC65AE1E786F8C003E38AD /* UIViewOverrides.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIViewOverrides.m; path = App/UIViewOverrides.m; sourceTree = "<group>"; };
 		A7AC65AF1E786F8C003E38AD /* ViewsAnalyzer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewsAnalyzer.h; path = App/ViewsAnalyzer.h; sourceTree = "<group>"; };
@@ -405,6 +415,7 @@
 			isa = PBXGroup;
 			children = (
 				A7E3B3921E7AA7B10021B0DF /* 00_FullyNativeTableView */,
+				A74429E41E82B87D001810D9 /* 05_BindingListView */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
@@ -516,6 +527,20 @@
 				6871CF3B29842C665172C132 /* Pods-AppTests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		A74429E41E82B87D001810D9 /* 05_BindingListView */ = {
+			isa = PBXGroup;
+			children = (
+				A74429F11E82BEDD001810D9 /* BindingListViewCell.h */,
+				A74429F21E82BEDD001810D9 /* BindingListViewCell.m */,
+				A74429EF1E82BBC5001810D9 /* BindingListViewCellManager.m */,
+				A74429E51E82B87D001810D9 /* BindingListView.h */,
+				A74429E61E82B87D001810D9 /* BindingListView.m */,
+				A74429F51E8428D0001810D9 /* BindingListViewManager.m */,
+			);
+			name = 05_BindingListView;
+			path = App/05_BindingListView;
 			sourceTree = "<group>";
 		};
 		A7E0C1CA1E76CD8C00E07B7D /* Products */ = {
@@ -961,10 +986,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				A744298B1E8034B0001810D9 /* FullyNativeTableViewCell.m in Sources */,
+				A74429E71E82B87D001810D9 /* BindingListView.m in Sources */,
 				A7AC65B71E786F8C003E38AD /* WrapperViewManager.m in Sources */,
 				A7E3B3981E7AC12D0021B0DF /* FullyNativeTableViewManager.m in Sources */,
+				A74429F01E82BBC5001810D9 /* BindingListViewCellManager.m in Sources */,
 				A7AC65B61E786F8C003E38AD /* WrapperView.m in Sources */,
 				A74429AA1E826017001810D9 /* NativeInfo.m in Sources */,
+				A74429F31E82BEDD001810D9 /* BindingListViewCell.m in Sources */,
+				A74429F61E8428D0001810D9 /* BindingListViewManager.m in Sources */,
 				A7AC65B41E786F8C003E38AD /* UIViewOverrides.m in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
 				A7AC65B51E786F8C003E38AD /* ViewsAnalyzer.m in Sources */,
