@@ -1,12 +1,14 @@
 import {NativeModules} from 'react-native';
 import _ from 'lodash';
 
-class BridgeNoise {
+class SlowJSSimulator {
   constructor() {
-    this._stats = {};
+    this._interval = 1;
     this._chunkSize = 0;
+    this._busyWait = 0;
+    this._stats = {};
     this._timer = undefined;
-
+    
     this._stringBlocks = [
          "___jfdshgkljhdasfgkljd hfgkljshd fkljghew85rhgkdsuifhgkdsjfhglkdjfhgkjdgfhkgdf",
          "___dsjfhr938hg fipwe8ugpiwerugyw4598yutpsiiftfkgdjshfgi8esyagfiausdfjhgk",
@@ -38,32 +40,56 @@ class BridgeNoise {
 
   setChunkSize(value) {
     this._chunkSize = Math.floor(value);
+    this._update();
   }
 
-  start() {
+  busyWait() {
+    return this._busyWait;
+  }
+
+  setBusyWait(value) {
+    this._busyWait = value;
+    this._update();
+  }
+
+  interval() {
+    return this._interval;
+  }
+
+  setInterval(value) {
+    this._interval = value;
+    this._update();
+  }
+
+  _update() {
     if(this._timer !== undefined) {
-      console.warn("BridgeNoise is already active");
-      return;
+      this._stop();
     }
 
+    if(this._chunkSize > 0 || this._busyWait > 0) {
+      this._start();
+    }
+  }
+
+  _start() {
     this._timer = setInterval(() => {
-      NativeModules.BridgeNoise.receiveAndSendData(
-        this._randomStringOfLenth(this._chunkSize),
-        new Date(Date.now() + (10 * 1000)).getTime(),
-        this._chunkSize,
-        (str, timestamp, stats) => {
-          this._stats = stats;
-        }
-      )
+      if(this._chunkSize > 0) {
+        NativeModules.BridgeNoise.receiveAndSendData(
+          this._randomStringOfLenth(this._chunkSize),
+          new Date(Date.now() + (10 * 1000)).getTime(),
+          this._chunkSize,
+          (str, timestamp, stats) => {
+            this._stats = stats;
+          }
+        )
+      }
+
+      var i = this._busyWait;
+      while(i-- > 0);
     }, 1);
   }
 
-  stop() {
-    if(this._timer === undefined) {
-      console.warn("BridgeNoise is already inactive");
-      return;
-    }
-
+  _stop() {
     clearInterval(this._timer);
     this._timer = undefined;
   }
@@ -88,4 +114,4 @@ class BridgeNoise {
   }
 }
 
-export default new BridgeNoise();
+export default new SlowJSSimulator();

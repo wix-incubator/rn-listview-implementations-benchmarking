@@ -4,7 +4,7 @@ import ListViews from './list_views';
 import _ from 'lodash';
 import Navigation from 'react-native-navigation';
 import DataProvider from './data_provider';
-import BridgeNoiseView from './bridge_noise/bridge_noise_view';
+import SlowJSSimulatorView from './slow_js_simulator/slow_js_simulator_view';
 
 export default class ListViewSelector extends Component {
   constructor(props) {
@@ -34,7 +34,7 @@ export default class ListViewSelector extends Component {
             title={rowData}
             />
           }/>
-        <BridgeNoiseView style={{marginLeft: 20, marginRight: 20}}/>
+        <SlowJSSimulatorView style={{marginRight: 10}}/>
       </View>
     );
   }
